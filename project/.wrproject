@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wrxml>
+    <properties platform="VxWorks" platform_name="vxworks-6.9" root="1" type="DownloadableKernelModuleProject"/>
+    <attributes>
+        <mapAttribute>
+            <listAttribute key="BLD::Info|Definess|SIMNTdiab">
+                <stringAttribute value="-DCPU=_VX_$(CPU)"/>
+                <stringAttribute value="-DTOOL_FAMILY=$(TOOL_FAMILY)"/>
+                <stringAttribute value="-DTOOL=$(TOOL)"/>
+                <stringAttribute value="-D_WRS_KERNEL"/>
+                <stringAttribute value="-D_VSB_CONFIG_FILE=\&quot;$(VSB_DIR)/h/config/vsbConfig.h\&quot;"/>
+                <stringAttribute value=" "/>
+            </listAttribute>
+            <listAttribute key="BLD::Info|GlobalMacros">
+                <stringAttribute value="PROJECT_TYPE"/>
+                <stringAttribute value="DEFINES"/>
+                <stringAttribute value="EXPAND_DBG"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|GlobalMacro|DEFINES" value=""/>
+            <stringAttribute key="BLD::Info|GlobalMacro|EXPAND_DBG" value="0"/>
+            <stringAttribute key="BLD::Info|GlobalMacro|PROJECT_TYPE" value="DKM"/>
+            <listAttribute key="BLD::Info|Incl|SIMNTdiab">
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+            </listAttribute>
+            <listAttribute key="BLD::Info|Macros">
+                <stringAttribute value="VX_CPU_FAMILY"/>
+                <stringAttribute value="CPU"/>
+                <stringAttribute value="TOOL_FAMILY"/>
+                <stringAttribute value="TOOL"/>
+                <stringAttribute value="TOOL_PATH"/>
+                <stringAttribute value="CC_ARCH_SPEC"/>
+                <stringAttribute value="VSB_DIR"/>
+                <stringAttribute value="VSB_CONFIG_FILE"/>
+                <stringAttribute value="LIBPATH"/>
+                <stringAttribute value="LIBS"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|Macro|CC_ARCH_SPEC|value|SIMNTdiab" value="-tX86LH:vxworks69"/>
+            <stringAttribute key="BLD::Info|Macro|CPU|value|SIMNTdiab" value="SIMNT"/>
+            <stringAttribute key="BLD::Info|Macro|LIBPATH|value|SIMNTdiab" value=""/>
+            <stringAttribute key="BLD::Info|Macro|LIBS|value|SIMNTdiab" value=""/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_FAMILY|value|SIMNTdiab" value="diab"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_PATH|value|SIMNTdiab" value=""/>
+            <stringAttribute key="BLD::Info|Macro|TOOL|value|SIMNTdiab" value="diab"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_CONFIG_FILE|value|SIMNTdiab" value="$(VSB_DIR)/h/config/vsbConfig.h"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_DIR|value|SIMNTdiab" value="$(WIND_BASE)/target/lib"/>
+            <stringAttribute key="BLD::Info|Macro|VX_CPU_FAMILY|value|SIMNTdiab" value="simpc"/>
+            <listAttribute key="BLD::Info|Tools">
+                <stringAttribute value="C-Compiler"/>
+                <stringAttribute value="C++-Compiler"/>
+                <stringAttribute value="Linker"/>
+                <stringAttribute value="Partial Image Linker"/>
+                <stringAttribute value="Librarian"/>
+                <stringAttribute value="Assembler"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|Tool|Assembler|cmd|SIMNTdiab" value="echo &quot;building $@&quot;;%assemblerprefix% $(TOOL_PATH)dcc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile%"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|dbgFlags|SIMNTdiab" value="-g"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|derivedSigs|SIMNTdiab" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|flags|SIMNTdiab" value="$(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only -Xsystem-headers-warn -Xc-new -Xdialect-c89  -Xpreprocess-assembly -Xcpp-no-space -Wa,-Xmnem-mit -Wa,-Xmnem-mit  -Xmake-dependency=0xd"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|nonDbgFlags|SIMNTdiab" value="-XO -Xsize-opt"/>
+            <booleanAttribute key="BLD::Info|Tool|Assembler|object" value="true"/>
+            <booleanAttribute key="BLD::Info|Tool|Assembler|passAble" value="false"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|sigs" value="*.s"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|cmd|SIMNTdiab" value="echo &quot;building $@&quot;;%cppcompilerprefix% $(TOOL_PATH)dcc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_C++FLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile%"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|dbgFlags|SIMNTdiab" value="-g"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|derivedSigs|SIMNTdiab" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|SIMNTdiab" value="$(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only -Xsystem-headers-warn -ei1518,4177,4223,4301,4550,5409,1606 -ei4193,4826,4381,4237,1573,4007,4082,4177,4223,4260,4550,5361,5828 -ei1522,4092,4111,4144,4152,4167,4171,4174,4186,4188,4191,4192,4223,4231,4236,4284,4375,4494,4513,5152,5457 -Xforce-declarations   -Xmake-dependency=0xd"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|nonDbgFlags|SIMNTdiab" value="-XO -Xsize-opt"/>
+            <booleanAttribute key="BLD::Info|Tool|C++-Compiler|object" value="true"/>
+            <booleanAttribute key="BLD::Info|Tool|C++-Compiler|passAble" value="false"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|sigs" value="*.cpp;*.C;*.cxx;*.cc"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|cmd|SIMNTdiab" value="echo &quot;building $@&quot;;%ccompilerprefix% $(TOOL_PATH)dcc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile%"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|SIMNTdiab" value="-g"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|derivedSigs|SIMNTdiab" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|SIMNTdiab" value="$(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only -Xsystem-headers-warn -Xc-new -Xdialect-c89  -ei1518,4177,4223,4301,4550,5409,1606 -ei4193,4826,4381,4237,1573,4007,4082,4177,4223,4260,4550,5361,5828 -ei1522,4092,4111,4144,4152,4167,4171,4174,4186,4188,4191,4192,4223,4231,4236,4284,4375,4494,4513,5152,5457 -Xforce-declarations   -Xmake-dependency=0xd"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|nonDbgFlags|SIMNTdiab" value="-XO -Xsize-opt"/>
+            <booleanAttribute key="BLD::Info|Tool|C-Compiler|object" value="true"/>
+            <booleanAttribute key="BLD::Info|Tool|C-Compiler|passAble" value="false"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|sigs" value="*.c"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|cmd|SIMNTdiab" value="echo &quot;building $@&quot;;%archiverprefix% $(TOOL_PATH)dar %ToolFlags% %OutFile% %Objects% $(ADDED_OBJECTS)"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|dbgFlags|SIMNTdiab" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|derivedSigs|SIMNTdiab" value="*.a"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|flags|SIMNTdiab" value="crus"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|nonDbgFlags|SIMNTdiab" value=""/>
+            <booleanAttribute key="BLD::Info|Tool|Librarian|object" value="false"/>
+            <booleanAttribute key="BLD::Info|Tool|Librarian|passAble" value="true"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|sigs" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Linker|cmd|SIMNTdiab" value="echo &quot;building $@&quot;;rm -f %OutFile%;ddump -Ng %Objects% | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c pentium -tags $(VSB_DIR)/tags/simpc/SIMNT/common/dkm.tags &gt; $(OBJ_DIR)/ctdt.c;%ccompilerprefix% $(TOOL_PATH)dcc %DebugModeFlags% $(CC_ARCH_SPEC) -Xdollar-in-ident -ei1518,4177,4223,4301,4550,5409,1606 -ei4193,4826,4381,4237,1573,4007,4082,4177,4223,4260,4550,5361,5828 -ei1522,4092,4111,4144,4152,4167,4171,4174,4186,4188,4191,4192,4223,4231,4236,4284,4375,4494,4513,5152,5457 -Xforce-declarations  $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES)  %Defines% $(DEFINES) -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c;%linkerprefix% $(TOOL_PATH)dld -tX86LH:vxworks69 -X -r5 -f 0x90,1,1 %ToolFlags% -o %OutFile% $(OBJ_DIR)/ctdt.o %Objects% %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|dbgFlags|SIMNTdiab" value="-g"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|derivedSigs|SIMNTdiab" value="*.out"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|flags|SIMNTdiab" value="-r4"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|nonDbgFlags|SIMNTdiab" value="-XO -Xsize-opt"/>
+            <booleanAttribute key="BLD::Info|Tool|Linker|object" value="false"/>
+            <booleanAttribute key="BLD::Info|Tool|Linker|passAble" value="false"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|sigs" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|cmd|SIMNTdiab" value="echo &quot;building $@&quot;;%linkerprefix% $(TOOL_PATH)dld -tX86LH:vxworks69 -X -r5 -f 0x90,1,1 %ToolFlags% -o %OutFile% %Objects% $(ADDED_OBJECTS) %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|dbgFlags|SIMNTdiab" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|derivedSigs|SIMNTdiab" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|flags|SIMNTdiab" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|nonDbgFlags|SIMNTdiab" value=""/>
+            <booleanAttribute key="BLD::Info|Tool|Partial Image Linker|object" value="false"/>
+            <booleanAttribute key="BLD::Info|Tool|Partial Image Linker|passAble" value="true"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|sigs" value=""/>
+            <stringAttribute key="BLD::Info|cmd" value="%makeprefix% make --no-print-directory"/>
+            <stringAttribute key="BLD::Info|defaultSpec" value="SIMNTdiab"/>
+            <stringAttribute key="BLD::Info|redirDir|SIMNTdiab" value="SIMNTdiab"/>
+            <stringAttribute key="BLD::Info|redirRoot" value=""/>
+            <listAttribute key="BLD::Info|specs">
+                <stringAttribute value="SIMNTdiab"/>
+            </listAttribute>
+            <intAttribute key="BuildSupportEnabled" value="1"/>
+            <booleanAttribute key="BuildTargetCentric" value="true"/>
+        </mapAttribute>
+    </attributes>
+    <buildtargets>
+        <buildtarget buildtool="Linker" name="AssignmentRTS" passed="false" targetname="AssignmentRTS">
+            <contents>
+                <buildtargetreference name="/AssignmentRTS/AssignmentRTS_partialImage"/>
+            </contents>
+        </buildtarget>
+        <buildtarget buildtool="Partial Image Linker" name="AssignmentRTS_partialImage" passed="true" targetname="AssignmentRTS_partialImage">
+            <contents>
+                <folder name="/AssignmentRTS" recursive="true"/>
+            </contents>
+        </buildtarget>
+    </buildtargets>
+</wrxml>
